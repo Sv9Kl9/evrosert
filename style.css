@@ -197,9 +197,9 @@ width: 80px;
 
 @media (max-width: 767px){
   .slogan-block{
-    display: grid;
-    /* flex-direction: row; */
-    grid-template-rows: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
+    
     grid-template-columns: none;
   }
 
