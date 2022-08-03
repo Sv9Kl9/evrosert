@@ -137,7 +137,7 @@ width: 80px;
 }
 
 .slogan-img>img{
-  max-height: 100%;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
 }
@@ -169,7 +169,7 @@ width: 80px;
   margin-bottom: 140px;
 }
 
-.slogan-button>a{
+.slogan-button>a, .document-button>a{
   text-decoration: none;
   color: white;
   background-color: rgb(140, 117, 104);
@@ -697,7 +697,7 @@ width: 80px;
   .document-description{
     margin-left: 10px;
   }
-  .slogan-button{
+  .document-button{
     margin-top: 20px;
     margin-bottom: 40px;
   }
@@ -714,7 +714,7 @@ width: 80px;
   .document-description{
     margin-left: 0px;
   }
-  .slogan-button{
+  .document-button{
     margin-top: 0px;
     margin-bottom: 10px;
   }
