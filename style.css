@@ -9,14 +9,30 @@ img{
   height: auto;
 }
 
+/* .w-picture_image{
+  color: rgb(109, 189, 221);
+} */
+
 header{
   height: auto;
   width: 100%;
-  background-color: rgb(47, 47, 50);
+  /* background: linear-gradient(right, white, rgb(30, 169, 198)); */
+  /* background: linear-gradient( rgb(144, 139, 134), rgb(255, 255, 255)); */
+  /* background: transparent; */
+  background-image: url(img/cover2.png);
+  background-size: cover;
+}
+
+.header-wrap{
+  /* background-color: rgb(47, 47, 50); */
+  /* background-image: url(img/abstract-blue-geometric-banner_1035-176861.jpg); */
+  /* background-image: url(img/abstract-blue.jpg); */
+  /* background-size: cover; */
+
 }
 
 .bg-dark{
-  background-color: rgb(47, 47, 50)!important;
+  /* background-color: rgb(47, 47, 50)!important; */
 }
 
 .navbar-toggler {
@@ -37,7 +53,7 @@ header{
 }
 
 .logo-text{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
 }
 
 .navbar-brand{
@@ -92,20 +108,23 @@ width: 80px;
 
 
 .nav-link{
-  color: white;
+  /* color: rgb(74, 74, 77); */
+  color: black;
   font-weight: bold;
   margin: 0px 5px 0px 5px;
+  text-align: center;
 }
 
 
 
 .navbar-nav>a:hover{
-  color: rgb(140, 117, 104);
+  /* color: rgb(140, 117, 104); */
+  color: rgb(44, 133, 54);
 }
 
 .navbar-collapse{
   justify-content: right;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .navbar{
@@ -125,15 +144,16 @@ width: 80px;
 .slogan-block{
   height: auto;
   width: auto;
-  background-color:  rgb(52, 52, 54);
+  /* background-color:  rgb(52, 52, 54); */
+  /* background-color: white; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .slogan-img{
   height: auto;
   width: auto;
-  
+  background: transparent;
 }
 
 .slogan-img>img{
@@ -143,8 +163,13 @@ width: 80px;
 }
 
 .slogan-text{
-  color: white;
-  padding: 100px 80px 0 80px;
+  /* color: white; */
+  color: rgb(74, 74, 77);
+  /* color: black; */
+  font-weight: bold;
+  margin: 100px 150px 0 300px;
+  padding: 50px 50px 0px 50px;
+  /* background-color: rgb(255, 255, 255, 0.8); */
   /* text-align: justify; */
 }
 
@@ -172,15 +197,38 @@ width: 80px;
 .slogan-button>a, .document-button>a{
   text-decoration: none;
   color: white;
-  background-color: rgb(140, 117, 104);
+  /* background-color: rgb(140, 117, 104); */
+  background-color: rgb(44, 133, 54);
+  /* rgb(109, 189, 221); */
   padding: 10px 10px 10px 10px;
   font-size: small;
   font-weight: bold;
 }
 
 .slogan-button>a:hover{
-  color: rgb(140, 117, 104);
+  /* color: rgb(140, 117, 104); */
+  color: rgb(44, 133, 54);
+  border: 2px solid rgb(44, 133, 54);;
   background-color: white;
+}
+
+@media (max-width: 1500px){
+  .slogan-text{
+    margin: 100px 0px 0 350px;
+  }
+}
+
+@media (max-width: 1400px){
+  .slogan-text{
+    padding: 0px 0px 0px 0px;
+    margin: 100px 0px 0 350px;
+  }
+}
+
+@media (max-width: 1300px){
+  .slogan-text{
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 992px){
@@ -191,7 +239,15 @@ width: 80px;
   }
 
   .slogan-text{
-    padding: 100px 40px 0px 40px;
+    margin: 80px 80px 0px 80px;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 20px 20px 0px 20px;
+  }
+  .slogan-block{
+    display: flex;
+    flex-direction: column;
+    
+    grid-template-columns: none;
   }
 }
 
@@ -210,7 +266,8 @@ width: 80px;
   }
 
   .slogan-text{
-    padding: 60px 20px 0px 20px;
+    margin: 60px 20px 0px 20px;
+    padding: 10px 5px 0px 5px;
   }
 
   .slogan-button{
@@ -293,7 +350,7 @@ width: 80px;
 }
 
 .dot{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
 }
 
 .about-h2{
@@ -318,8 +375,8 @@ width: 80px;
 
 .about-button1 a{
   background-color: white;
-  color: rgb(140, 117, 104);
-  border: 2px solid rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
+  border: 2px solid rgb(44, 133, 54);
   padding: 10px 5px 10px 5px;
   text-decoration: none;
   margin-right: 20px;
@@ -327,9 +384,9 @@ width: 80px;
 }
 
 .about-button2 a{
-  background-color: rgb(140, 117, 104);
+  background-color: rgb(44, 133, 54);
   color: white;
-  border: 2px solid rgb(140, 117, 104);
+  border: 2px solid rgb(44, 133, 54);
   padding: 10px 13px 10px 13px;
   text-decoration: none;
   margin-left: 20px;
@@ -337,13 +394,14 @@ width: 80px;
 }
 
 .about-button1 a:hover{
-  background-color: rgb(140, 117, 104);
+  background-color: rgb(44, 133, 54);
   color: white;
 }
 
 .about-button2 a:hover{
-  background-color: rgb(74, 74, 77);
-  color: white;
+  border: 2px solid rgb(44, 133, 54);
+  color: rgb(44, 133, 54);
+  background-color: white;
 }
 
 @media (max-width: 1400px){
@@ -494,7 +552,7 @@ width: 80px;
 
 .why-card img{
   height: 90px;
-  width: 90px;
+  width: 70px;
   padding-bottom: 20px;
 }
 
@@ -643,12 +701,12 @@ width: 80px;
 }
 
 .document-mark{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
   font-size: 20px;
 }
 
 .list-inside-document li{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
 }
 
 .list-inside-document span{
@@ -656,7 +714,7 @@ width: 80px;
 }
 
 .accordion-button:not(.collapsed){
-  background-color: rgb(140, 117, 104);
+  background-color: rgb(44, 133, 54);
   color: white;
   font-weight: bold;
 }
@@ -807,7 +865,7 @@ width: 80px;
   margin: 0 auto;
   width: 70px;
   height: 70px;
-  background-color: rgb(140, 117, 104);
+  background-color: rgb(44, 133, 54);
   border-radius: 50%;
   text-align: center;
 }
@@ -932,21 +990,21 @@ width: 80px;
   height: auto;
   width: auto;
   
-  background-image: url(img/dark-fon.jpg);
+  background-image: url(img/back2.png);
   background-size: cover;
 }
 
 
 
 .cost-form-wrap{
-  background-color: rgb(52, 52, 54, 0.6);
+  background-color: rgb(255, 255, 255, 0.6);
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
 
 .cost-form-header{
-  color: white;
+  color: rgb(74, 74, 77);
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -956,7 +1014,7 @@ width: 80px;
 }
 
 .cost-form-description{
-  color: white;
+  color: rgb(74, 74, 77);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -970,8 +1028,8 @@ width: 80px;
 }
 
 .cost-form_field input{
-  background-color: rgba(56, 56, 57, 0.99);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.99);
+  color: rgb(74, 74, 77);
   padding: 15px 26px 15px 26px;
   margin-bottom: 15px;
   width: 80%;
@@ -983,8 +1041,8 @@ form{
 }
 
 .cost-form_field textarea{
-  background-color: rgba(56, 56, 57, 0.99);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.99);
+  color: rgb(74, 74, 77);
   padding: 15px 26px 30px 26px;
   margin-bottom: 30px;
   width: 80%;
@@ -994,7 +1052,7 @@ form{
 .cost-button{
   color: white;
   font-weight: bold;
-  background-color: rgb(140, 117, 104);
+  background-color: rgb(44, 133, 54);
   padding: 15px 26px 15px 26px;
   width: 80%;
   border: 0px;
@@ -1002,8 +1060,9 @@ form{
 }
 
 .cost-button:hover{
-  color: rgb(52, 52, 54);
+  color: rgb(44, 133, 54);
   background-color: white;
+  border: 2px solid rgb(44, 133, 54);
 }
 
 @media (max-width: 992px){
@@ -1054,9 +1113,9 @@ form{
   margin: 0px 30px 0px 30px;
 }
 
-.why-line{
+/* .why-line{
   padding-left: 60px;
-}
+} */
 
 .contacts-description{
   color: rgb(74, 74, 77);
@@ -1096,7 +1155,7 @@ form{
 }
 
 .footer-wrap{
-  background-color: rgb(49, 49, 51);
+  background-color: rgb(233, 233, 234);
   height: auto;
   width: auto;
   display: grid;
@@ -1126,7 +1185,7 @@ form{
 }
 
 .footer-logo-text{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
   font-weight: bold;
 }
 
@@ -1138,11 +1197,11 @@ form{
 .footer-list li{
   list-style-type: square;
   padding: 10px 10px 10px 10px;
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
 }
 
 .footer-list li:hover{
-  color: rgb(140, 117, 104);
+  color: rgb(44, 133, 54);
 }
 
 @media (max-width: 992px){
